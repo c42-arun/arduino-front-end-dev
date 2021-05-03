@@ -14,8 +14,19 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
+var buttonValue = 0;
+
 io.on('connection', function(socket){
     console.log('Connection to client established');
+    
+    io.emit('clicked message', buttonValue); // for new connections to push current value
+
+    socket.on('clicked message', function(msg) {
+        buttonValue = 1 - buttonValue;
+        io.emit('clicked message', buttonValue);
+        console.log('Received message from client!', msg);
+    });
+
     socket.on('disconnect', function(){
         console.log('Server has disconnected');
     });
