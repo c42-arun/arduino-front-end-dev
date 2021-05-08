@@ -1,0 +1,25 @@
+{
+  "name": "chapter_05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c42-arun/arduino-front-end-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c42-arun/arduino-front-end-dev/issues"
+  },
+  "homepage": "https://github.com/c42-arun/arduino-front-end-dev#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "serialport": "^9.0.7",
+    "socket.io": "^1.7.3"
+  }
+}
