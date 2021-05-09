@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>text</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>SENDING TEXT</h1>
+            <h2>Getting data from the front end to an Arduino</h2>
+        </header>
+        <div id="content">
+            <input type="text" id="input-text" placeholder="add text" maxlength="32">
+            <input type="submit" id="send-text" value="send text">
+            <div class="text-block">
+                <p>The text sent from this text box will appear on an LCD connected to an Arduino.</p>
+                <p>There is a text limit of 32 characters on thius box</p>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="javascript/main.js"></script>
+    </body>
+</html>
